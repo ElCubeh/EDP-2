@@ -1,4 +1,4 @@
-class Node:
+class node:
     def __init__(self, value=None):
         self.value = value
         self.left_child = None
@@ -81,7 +81,7 @@ class AVLTree:
             else:
                 self._insert(value,cur_node.right_child)
         else:
-            print "¡El valor ya existe en el árbol!"
+            print ("¡El valor ya existe en el árbol!")
 
     def print_tree(self):
         if self.root!=None:
@@ -90,7 +90,7 @@ class AVLTree:
     def _print_tree(self,cur_node):
         if cur_node!=None:
             self._print_tree(cur_node.left_child)
-            print '%s, h=%d'%(str(cur_node.value),cur_node.height)
+            print ('%s, h=%d'%(str(cur_node.value),cur_node.height))
             self._print_tree(cur_node.right_child)
 
     def height(self):
@@ -128,7 +128,7 @@ class AVLTree:
 
         # Protección contra eliminación de nodos no existentes
         if node==None or self.find(node.value)==None:
-            print "¡Nodo a eliminar no encontrado en el árbol!"
+            print ("¡Nodo a eliminar no encontrado en el árbol!")
             return None 
         ## -----
 
