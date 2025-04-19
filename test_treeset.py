@@ -162,17 +162,6 @@ class TestTreeSet(unittest.TestCase):
         
         desc = list(empty_set.descending_iterator())  # Iterador descendente
         self.assertEqual(desc, [])  # El conjunto vacío debería devolver una lista vacía
-
-
-def test_iter_empty_set(self):
-    empty_set = TreeSet()
-    asc = list(empty_set)  # Iterador ascendente
-    self.assertEqual(asc, [])  # El conjunto vacío debería devolver una lista vacía
-    
-    desc = list(empty_set.descending_iterator())  # Iterador descendente
-    self.assertEqual(desc, [])  # El conjunto vacío debería devolver una lista vacía
-
-        
     
 if __name__ == '__main__':
     unittest.main()
