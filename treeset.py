@@ -8,7 +8,7 @@ class TreeSet:
         
         if collection is not None:
             if not isinstance(collection, Iterable):
-                raise TypeError("Argument must be iterable")
+                raise TypeError("Argumento debe ser iterable.")
             for element in collection:
                 self.add(element)
     
@@ -165,4 +165,5 @@ class TreeSet:
                 raise StopIteration
             node = self.stack.pop()
             self._push_right(node.left_child)
+            return node.value
             return node.value
